@@ -48,11 +48,22 @@
     "./src/**/*.{html,js,jsx,ts,tsx}"
 ```
 
-Add the tailwind directives at the top of the `index.css` file
+4.Add the tailwind directives at the top of the `index.css` file
 
 ```
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+```
+5. Add the following details in the plugin property of tailwind config
+
+```
+        [require("daisyui"), require("@tailwindcss/line-clamp")]
+```
+
+### Adding plugins and sependencies
+
+```
+npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
 ```
 
