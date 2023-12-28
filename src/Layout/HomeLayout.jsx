@@ -10,8 +10,8 @@ function HomeLayout({children}){
     const navigate = useNavigate();
 
     //for checking if user is logged in
-    const isLoggedIn = useSelector((state) => state?.auth?.isLoggedIn);
-
+    // const isLoggedIn = useSelector((state) => state?.auth?.isLoggedIn);
+    const isLoggedIn = false;
     //for displaying the options according to role
     const role = useSelector((state) => state?.auth?.role);
 
