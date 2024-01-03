@@ -2,18 +2,12 @@ import {FiMenu} from "react-icons/fi";
 import {AiFillCloseCircle} from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
-import { useDispatch, useSelector } from "react-redux";
 
 function HomeLayout({children}){
 
-    const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    //for checking if user is logged in
-    // const isLoggedIn = useSelector((state) => state?.auth?.isLoggedIn);
     const isLoggedIn = false;
-    //for displaying the options according to role
-    const role = useSelector((state) => state?.auth?.role);
 
     function changeWidth(){
         const drawerSide = document.getElementsByClassName("drawer-side");

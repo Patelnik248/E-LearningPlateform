@@ -1,7 +1,7 @@
 
 function CourseCard({data}){
     return(
-        <div className="text-white w-[22rem] ml-7 h-[330px] shadow-lg rounded-lg cursor-pointer group overflow-hidden bg-zinc-700">
+        <div className="text-white w-[22rem] ml-7 h-[360px] shadow-lg rounded-lg cursor-pointer group overflow-hidden bg-zinc-700">
         <div className="overflow-hidden">
                 <img 
                     className="h-48 p-2 ml-20 mt-2 rounded-tl-lg "
@@ -19,6 +19,10 @@ function CourseCard({data}){
                     <p className="font-semibold">
                         <span className="text-yellow-500 font-bold">Instructor : </span>
                         {data?.name}
+                    </p>
+                    <p className="font-semibold">
+                        <span className="text-yellow-500 font-bold">Price : </span>
+                        {data?.price}
                     </p>
                 </div>
             </div>
